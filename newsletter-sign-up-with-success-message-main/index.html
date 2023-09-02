@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <!-- moldear en dispositivos moviles (primer) -->
+    <section class="contenedor">
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        alt="illustration-sign-up-mobile"
+        class="img-mobile"
+      />
+      <div class="contenedor-acess">
+        <h1 class="title">Stay updated!</h1>
+        <p>Join 60.000+ product managers reciving monthly updates on:</p>
+        <div class="list-options">
+          <ul>
+            <li>
+              <img src="./assets/images/icon-list.svg" />
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" />
+              <span>Measuring to ensure updates are a succes</span>
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" />
+              <span>And much more!</span>
+            </li>
+          </ul>
+        </div>
+        <form class="form-acess">
+          <div class="title-email">
+            <span class="span-form"> Email address </span>
+            <label>
+              <input
+                type="email"
+                required
+                name="email"
+                placeholder="email@company.com"
+              />
+            </label>
+          </div>
+          <div class="button-subscribe">
+            <button class="button-subscribe-newsletter">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
