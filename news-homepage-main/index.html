@@ -11,24 +11,39 @@
   <script src="./src/script.js" defer></script>
 </head>
 <body>
-  <header class="content-header content">
-    <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
-    <nav class="link-navegacion">
-      <ul class="link-sitios">
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
-      <div class="menu-mobile">
-        <img src="./assets/images/icon-menu.svg" alt="menu-open">
+  <div id="nav-latteral" class="nav-latteral">
+    <div id="nav-close" class="nav-button">
+      <img src="./assets/images/icon-menu-close.svg" alt="">
+    </div>
+    <div class="nav-links">
+      <div class="nav-link">
+        <span>Home</span>
       </div>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="./assets/images/image-web-3-mobile.jpg" alt="">
+      <div class="nav-link">
+        <span>News</span>
+      </div>
+      <div class="nav-link">
+        <span>Popular</span>
+      </div>
+      <div class="nav-link">
+        <span>Trending</span>
+      </div>
+      <div class="nav-link">
+        <span>Categories</span>
+      </div>
+    </div>
+  </div>
+  <div id="nav-wrapper"></div>
+  <nav>
+    <img src="./assets/images/logo.svg" class="logo-w">
+    <div id="nav-open" class="nav-button">
+      <img src="./assets/images/icon-menu.svg" alt="">
+    </div>
+  </nav>
+  <main class="content">
+    <section class="destok-pri-grid">
+      <img src="./assets/images/image-web-3-mobile.jpg" class="mobile-img">
+      <img src="./assets/images/image-web-3-desktop.jpg" class="img-destop">
       <div class="content-principal">
         <h2>The Bright Future of Web 3.0?</h2>
         <div class="content-parrafo">
@@ -38,22 +53,24 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="news">
       <h2>New</h2>
       <article>
         <h2>Hydrogen VS Electric Cars</h2>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
       </article>
+      <hr>
       <article>
         <h2>The Downsides of AI Artistry</h2>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
       </article>
+      <hr>
       <article>
         <h2>Is VC Funding Drying Up?</h2>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </article>
-    </section>
-    <section>
+    </section class="destok--grid">
+    <section class="end-section">
       <article>
         <img src="./assets/images/image-retro-pcs.jpg" alt="">
         <div class="content-end">
@@ -71,7 +88,7 @@
         </div>
       </article>
       <article>
-        <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="">
         <div class="content-end">
           <span>03</span>
           <h3>The Growth of Gaming</h3>
@@ -80,12 +97,5 @@
         </article>
     </section>
   </main>
-  <main>
-
-  </main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
 </body>
 </html>
